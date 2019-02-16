@@ -1,0 +1,82 @@
+<!--pages/detail/detail.wxml-->
+<scroll-view class="scroll-box" scroll-y="true">
+
+
+<swiper
+  autoplay="true"
+  interval="5000"
+  duration="1000"
+  class="sbox"
+>
+<swiper-item>
+      <image src="../../imgs/a1.png" bindtap="test" class="spic" width="98vw" height="98vw" />
+</swiper-item>
+
+<swiper-item >
+      <image src="../../imgs/a1.png" class="spic" width="98vw" height="98vw" />
+</swiper-item>
+
+</swiper>
+
+<!-- 分割线 -->
+<view class="split">
+<view class="skill">秒杀</view>
+<view>抢购中</view>
+<view class="time">剩余时间：07：29：59</view>
+</view>
+
+<!-- 产品文字信息 -->
+<view class="info">
+<view class="txt1">给肌肤来一场春雨</view>
+<view  class="txt2">Papa Recipe春雨蜂蜜面膜25g*5片</view>
+<view  class="txt3">￥49.5</view>
+<view  class="txt4">￥99</view>
+</view>
+
+<!-- 产品保证 -->
+<view class="makesure">
+<view class="sure-item">
+<image class="right" src="../../imgs/right.png"></image>
+<view class="sure-txt">正品保证</view>
+</view>
+
+<view class="sure-item">
+<image class="right" src="../../imgs/right.png"></image>
+<view class="sure-txt">满￥68免邮</view>
+</view>
+
+<view class="sure-item">
+<image class="right" src="../../imgs/right.png"></image>
+<view class="sure-txt">7天退货</view>
+</view>
+</view>
+
+<!-- 领券 -->
+
+<view class="qu-box">
+<view class="qu-txt">领券</view>
+<view class="qu-item">满299减75</view>
+<view class="qu-item">满299减75</view>
+<view class="qu-item">满299减68</view>
+<image class="qu-img" src="../../imgs/rightSide.png"></image>
+</view>
+
+<!-- 会员特权 -->
+<view class="vi-box">
+  <view class="vi-box2">
+      <view class="vi-it">
+          <view class="vi-item">会员特权</view>
+          <view>购卡后两个月内享两次满150减...</view>
+      </view>
+      <view class="vi-it">
+          <view class="vi-item">会员特权</view>
+          <view>买68元包邮</view>
+      </view>
+  </view>
+</view>
+
+</scroll-view>
+<view class="paycart-box">
+<view class="cart">加入购物车</view>
+<view class="pay">立即支付</view>
+</view>

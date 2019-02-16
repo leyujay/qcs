@@ -1,0 +1,107 @@
+<!--pages/cart/cart.wxml-->
+
+<scroll-view scroll-y="ture" class="srcoll-box">
+<view wx:if="{{iscart==false}}" class="empty-cart">
+<image src="../../imgs/emcart.png"/>
+<view class="cart-txt">购物车是空的~</view>
+<view class="cart-txt2">去首页逛逛</view>
+</view>
+
+
+<!-- 有加购物车物品 -->
+<view class="has-cart">
+<!-- 承诺 -->
+<view class="has-prom">
+<view class="prom-item">
+<image src="../../imgs/right.png"></image>
+<view class="prom-txt" bindtap='test'>正品保证</view>
+</view>
+
+<view class="prom-item">
+<image src="../../imgs/right.png"></image>
+<view class="prom-txt">屈臣氏品牌</view>
+</view>
+
+<view class="prom-item">
+<image src="../../imgs/right.png"></image>
+<view class="prom-txt">7天退货</view>
+</view>
+
+</view>
+</view>
+<!-- 购物车列表 -->
+<view class="gou-item" wx:for="{{cartclick}}" wx:for-index="xid" >
+    <checkbox-group  bindchange="shopChange" data-idx="{{xid}}" data-clu="{{item[0]}}">
+      <view class="shop-box">
+        <checkbox class="check-selected" value="true" checked="{{ischecked[0]==item[0]?ischecked[1]:''}}" checked="{{waschecked}}">{{item[0]}}</checkbox>
+        <view class="send-fax">(已满$68包邮)</view>
+      </view>
+    </checkbox-group >
+    <checkbox-group bindchange="proChange">
+    <block wx:for="{{item[1]}}" wx:for-item="info">
+      <view class="pro2">
+      <checkbox class="pro2-check" id="{{info.id}}" value="true" bindtap="onechecked" data-clu="{{info.caclu}}"  checked="{{info.checked}}"></checkbox>
+      <image class="pro2-img" src="{{info.spic}}"></image>
+      <view class="pro2-txt-box">
+          <view class="pro2-txt">{{info.catitle}} {{info.cainfo}}</view>
+          <view class="pro2-weight">{{info.cainfo}}</view>
+              <view class="pro2-count-box">
+                <view class="pro2-reduce" bindtap="redcart" id="{{info.id}}" data-count="{{info.count}}">-</view>
+                <view class="pro2-count">{{info.count}}</view>
+                <view class="pro2-add"  bindtap="addcart" id="{{info.id}}" data-count="{{info.count}}">+</view>
+              </view>
+           
+      </view>
+         <view class="price">￥{{info.caprice*info.count}}.00</view>  
+      </view>
+      
+    </block>
+    </checkbox-group> 
+
+</view>
+
+
+
+
+
+<!-- 过渡 -->
+<view class="guodu"></view>
+
+<view class="rmand-box">
+<view class="ramd-txt">智能推荐商品</view>
+<!-- 产品个体 -->
+<block wx:for="{{cartlist}}">
+<view class="pro-item">
+<image class="pro-img" bindtap="detailpage" data-id="2" src="{{item.spic}}"></image>
+<view class="pro-ad">
+<view class="pro-txt">{{item.spage}}</view>
+</view>
+<view class="pro-title" bindtap="detailpage" data-id="2">
+<view class="title-txt">{{item.stitle}}</view>
+<view class="title-txt2">{{item.sstitle}}...</view>
+</view>
+<view class="pro-pri">
+<view class="pri-1">￥{{item.sprice}}</view>
+<image bindtap="gocart" data-id="{{item.id}}" class="pri-img" src="../../imgs/gou.png"></image>
+</view>
+</view>
+</block>
+
+
+
+</view>
+</scroll-view>
+
+<checkbox-group bindchange="sumChange">
+    <view class="sum-count-box">
+        <view class="sum-mid">
+            <checkbox class="sum-count"></checkbox>
+            <view class="sum-txt">全选</view>
+        </view>
+
+    <view class="sum-pri"><view>合计：</view><view class="pri-color">￥{{sumpri}}</view></view>
+    <view class="sum-sumit">
+    结算（6）
+    </view>
+    </view>
+</checkbox-group>

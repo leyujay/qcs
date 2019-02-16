@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/search",
+    "pages/vip/vip",
+    "pages/cart/cart",
+    "pages/my/my",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "测试小程序",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"imgs/index.png",
+        "selectedIconPath":"imgs/index2.png"
+      },
+      {
+        "pagePath": "pages/vip/vip",
+        "text": "会员",
+        "iconPath": "imgs/vip.png",
+        "selectedIconPath": "imgs/vip2.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "imgs/cart.png",
+        "selectedIconPath": "imgs/cart2.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "imgs/my.png",
+        "selectedIconPath": "imgs/my2.png"
+      }
+    ],
+    "color":"#bfbfbf",
+    "selectedColor":"#4cd7be"
+  }
+}

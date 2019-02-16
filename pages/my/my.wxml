@@ -1,0 +1,110 @@
+<!--pages/my/my.wxml-->
+<!-- 请登录 -->
+<view class="user-box">
+  <view class="user-txt-box">
+      <button wx:if="{{haslogin==false}}"
+        open-type="getUserInfo"
+        bindgetuserinfo="getUserInfo">
+        登录
+      </button>
+      <view wx:if="{{haslogin==true}}" class="user-name">{{userName}}</view>
+      <view wx:if="{{haslogin==true}}" class="user-phone">186****7697</view>
+  </view>
+  <image src="{{userImg}}"></image>
+</view>
+<!-- <button
+  open-type="getPhoneNumber"
+  bindgetPhoneNumber="getPhoneNumber"
+>
+  授权电话号码
+</button> -->
+<view class="info-box">
+    <view class="info-item" bindtap="test">
+      <image class="info-item-img"  src="../../imgs/order.png"></image>
+      <view class="info-item-txt">全部订单</view>
+      <image class="info-item-img2" src="../../imgs/rightSide.png"></image>
+    </view>
+    <view class="info-item">
+      <image class="info-item-img" src="../../imgs/worder.png"></image>
+      <view class="info-item-txt">待付款</view>
+      <image class="info-item-img2" src="../../imgs/rightSide.png"></image>
+    </view>
+    <view class="info-item">
+      <image class="info-item-img" src="../../imgs/wsend.png"></image>
+      <view class="info-item-txt">待发货</view>
+      <image class="info-item-img2" src="../../imgs/rightSide.png"></image>
+    </view>
+    <view class="info-item">
+      <image class="info-item-img" src="../../imgs/wreceice.png"></image>
+      <view class="info-item-txt">待收货</view>
+      <image class="info-item-img2" src="../../imgs/rightSide.png"></image>
+    </view>
+    <view class="info-item">
+      <image class="info-item-img" src="../../imgs/nreceice.png"></image>
+      <view class="info-item-txt">退货</view>
+      <image class="info-item-img2" src="../../imgs/rightSide.png"></image>
+    </view>
+    <view class="info-item">
+      <image class="info-item-img" src="../../imgs/scan.png"></image>
+      <view class="info-item-txt">扫码购订单</view>
+      <image class="info-item-img2" src="../../imgs/rightSide.png"></image>
+    </view>
+
+</view>
+
+<view class="line"></view>
+<view class="info-box">
+ <view class="info-item">
+      <image class="info-item-img" src="../../imgs/cheese.png"></image>
+      <view class="info-item-txt">我的试用</view>
+      <image class="info-item-img2" src="../../imgs/rightSide.png"></image>
+ </view>
+
+  <view class="info-item">
+      <image class="info-item-img" src="../../imgs/cherry.png"></image>
+      <view class="info-item-txt">我的拼团</view>
+      <image class="info-item-img2" src="../../imgs/rightSide.png"></image>
+ </view>
+
+  <view class="info-item">
+      <image class="info-item-img" src="../../imgs/coffee-in-a-disposab.png"></image>
+      <view class="info-item-txt">优惠券</view>
+      <image class="info-item-img2" src="../../imgs/rightSide.png"></image>
+ </view>
+
+  <view class="info-item">
+      <image class="info-item-img" src="../../imgs/beer.png"></image>
+      <view class="info-item-txt">会员卡</view>
+      <image class="info-item-img2" src="../../imgs/rightSide.png"></image>
+ </view>
+
+  <view class="info-item">
+      <image class="info-item-img" src="../../imgs/bell-pepper.png"></image>
+      <view class="info-item-txt">收货地址</view>
+      <image class="info-item-img2" src="../../imgs/rightSide.png"></image>
+ </view>
+
+  <view class="info-item">
+      <image class="info-item-img" src="../../imgs/corn.png"></image>
+      <view class="info-item-txt">联系客服</view>
+      <image class="info-item-img2" src="../../imgs/rightSide.png"></image>
+ </view>
+
+   <view class="info-item">
+      <image class="info-item-img" src="../../imgs/apple-and-pear.png"></image>
+      <view class="info-item-txt">建议反馈</view>
+      <image class="info-item-img2" src="../../imgs/rightSide.png"></image>
+ </view>
+
+   <view class="info-item">
+      <image class="info-item-img" src="../../imgs/cucumber.png"></image>
+      <view class="info-item-txt">关于我们</view>
+      <image class="info-item-img2" src="../../imgs/rightSide.png"></image>
+ </view>
+
+   <view class="info-item">
+      <image class="info-item-img" src="../../imgs/cc.png"></image>
+      <view class="info-item-txt">隐私政策</view>
+      <image class="info-item-img2" src="../../imgs/rightSide.png"></image>
+ </view>
+ </view>

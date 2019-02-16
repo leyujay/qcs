@@ -1,0 +1,300 @@
+.empty-cart{
+  width: 100%;
+  height: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.empty-cart image{
+  width: 30vw;
+  height: 30vw;
+  margin-top: 8vw;
+}
+.cart-txt{
+  margin-top: 5vw;
+  font-size: 4.2vw;
+  color: rgb(160, 160, 160);
+}
+.cart-txt2{
+  margin-top: 7vw;
+  padding: 4vw;
+  color: white;
+  background-color: rgb(35, 206, 169);
+  border-radius: 2vw;
+  font-size: 5vw;
+}
+.guodu{
+  width: 100%;
+  height: 3.8vw;
+  background-color: whitesmoke;
+}
+
+
+/* 智能推荐商品 */
+.rmand-box{
+  width: 100%;
+  background-color: white;
+}
+.ramd-txt{
+  padding: 5vw;
+  font-weight: bold;
+}
+.pro-item{
+  width: 41.3vw;
+  padding: 2vw;
+  margin: 2vw;
+  height: 73vw;
+  /* background-color: whitesmoke; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3.8vw;
+  position: relative;
+  border: 0.5px solid #dbdbdb;
+  float: left;
+  background-color: white;
+}
+.pro-img{
+  height: 40vw;
+  width: 40vw;
+  margin-bottom: 7vw;
+}
+.pro-ad{
+  position: absolute;
+  display: inline-flex;
+  font-size: 3.1vw;
+  top: 40vw;
+  width: 90%;
+}
+.pro-title{
+  width: 41vw;
+}
+.pro-txt{
+  background-color: rgb(252, 92, 92);
+  color: white;
+  padding: 1vw;
+  border-radius: 1vw;
+  margin-right: 1vw;
+}
+.pro-txt1{
+  background-color: rgb(252, 92, 92);
+  color: white;
+  padding: 1vw;
+  border-radius: 1vw;
+}
+.pro-title{
+  margin-top: 2vw;
+}
+.title-txt{
+  font-size: 4vw;
+}
+.title-txt2{
+  color: rgb(128, 128, 128);
+  margin-top: 1vw;
+}
+.pro-pri{
+  width: 100%;
+  padding-top: 5vw;
+  position: relative;
+}
+.pri-1{
+  font-size: 5vw;
+  float: left;
+  color: rgb(252, 92, 92);
+  font-weight: 600;
+}
+
+.pri-3{
+  float: left;
+  color: rgb(182, 142, 10);
+}
+.pri-img{
+  width: 5vw;
+  height: 5vw;
+  padding: 1.2vw;
+  background-color: rgb(253, 40, 40);
+  border-radius: 50%;
+  position: absolute;
+  top: 3.5vw;
+  left: 30vw;
+}
+
+/* 有产品的购物车页面 */
+.has-cart{
+  width: 100%;
+  height: 13.8vw;
+  background-color: rgb(255, 230, 160);
+}
+.prom-item{
+  width: 33.33vw;
+  height: 13.8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  font-size: 4.2vw;
+}
+.prom-item image{
+  width: 7vw;
+  height: 7vw;
+  float: left;
+}
+
+/* 购物车内容 */
+.srcoll-box{
+  width: 100%;
+  /* background-color: whitesmoke; */
+  height: 91vh;
+}
+.shop-box{
+  height: 13.8vw;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  font-size: 4.5vw;
+  margin-top: 2vw;
+}
+.check-selected{
+  margin-left: 2vw;
+}
+.check-selected .wx-checkbox-input.wx-checkbox-input-checked{
+  background-color: rgb(70, 221, 188);
+  color: white;
+  border-radius: 50%;
+}
+.check-selected .wx-checkbox-input.wx-checkbox-input-checked::before{
+  color: white;
+}
+.send-fax{
+  margin-left: 28vw;
+}
+.gou-item{
+  background-color: whitesmoke;
+}
+.pro2{
+  background-color: white;
+  margin-top: 2vw;
+  height: 35vw;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+.pro2-check{
+  margin-left: 2vw;
+}
+.pro2-img{
+  height: 25vw;
+  width: 25vw;
+  margin-left: 2vw;
+}
+.pro2-txt-box{
+  margin-left: 2vw;
+  width: 60vw;
+  padding: 2vw;
+}
+.pro2-txt{
+  font-size: 4.2vw;
+  height: 10vw;
+}
+.pro2-weight{
+  color: rgb(173, 173, 173);
+  font-size: 4.2vw;
+}
+.pro2-count-box{
+  margin-top: 2vw;
+  display: inline-flex;
+  background-color: whitesmoke;
+  width: 25vw;
+  border: 1px solid #dbdbdb;
+  height: 7vw;
+}
+.price{
+  position: absolute;
+  right: 10vw;
+  margin-top: 8.5vw;
+  font-weight: bold;
+  color: red;
+}
+.pro2-reduce{
+  width: 30%;
+  border-right: 1px solid #dbdbdb;
+  text-align: center;
+  line-height: 7vw;
+}
+.pro2-count{
+  width: 40%;
+  border-right: 1px solid #dbdbdb;
+  text-align: center;
+  font-size: 3.5vw; 
+  line-height: 7vw;
+}
+.pro2-add{
+  width: 30%;
+  text-align: center;
+  line-height: 7vw;
+}
+.pro2-reduce:active{
+  width: 30%;
+  border-right: 1px solid #dbdbdb;
+  text-align: center;
+  line-height: 7vw;
+  background-color: rgb(70, 221, 188);
+  color: white;
+}
+.pro2-add:active{
+  width: 30%;
+  text-align: center;
+  line-height: 7vw;
+  background-color: rgb(70, 221, 188);
+  color: white;
+}
+.pro2-check .wx-checkbox-input.wx-checkbox-input-checked{
+  background-color: rgb(70, 221, 188);
+  color: white;
+  border-radius: 50%;
+}
+.pro2-check .wx-checkbox-input.wx-checkbox-input-checked::before{
+  color: white;
+}
+
+/* 结算部分 */
+.sum-count-box{
+  display: inline-flex;
+  height: 9vh;
+  align-items: center;
+}
+.sum-mid{
+  width: 9vh;
+  /* background-color: wheat; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 4.2vw;
+}
+.sum-txt{
+  color: rgb(175, 175, 175);
+  font-size: 3.2vw;
+  margin-left: -1.6vw;
+}
+.sum-pri{
+  width: 57vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.pri-color{
+  color: rgb(252, 41, 41);
+}
+.sum-sumit{
+  background-color: rgb(70, 221, 188);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 31vw;
+  color: white;
+  font-size: 4.2vw;
+  height: 9vh;
+
+}

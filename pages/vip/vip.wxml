@@ -1,0 +1,77 @@
+<!--pages/vip/vip.wxml-->
+<view class="backg">
+<image class="backimg" src="../../imgs/b1.png"></image>
+<view class="font-big local">会员专享福利</view>
+<view class="local1">已是会员？立即绑卡></view>
+
+<view class="local2"><view class="point"></view><view class="lo2-f">每年最低</view><view class="lo2-f fcolor">省60元</view>
+<image class="lo2-f" src="../../imgs/a1.png"></image>
+<view>查看攻略></view>
+</view>
+<view class="local3">
+<view class="point"></view><view class="lo2-f">购物积累</view><view class="lo2-f fcolor">积分</view><view>，直接兑换/抵现</view>
+</view>
+<view class="local4">
+<view class="point"></view><view  class="lo2-f">每月享受不同</view><view class="fcolor">专属优惠活动</view> 
+</view>                                         
+</view>
+
+<!-- 会员特权 -->
+<view class="vip-box">
+
+<view class="vip-item">
+<image src="../../imgs/c1.png"></image>
+<view class="vip-txt">购卡立减</view>
+</view>
+
+<view class="vip-item">
+<image src="../../imgs/c2.png"></image>
+<view class="vip-txt">满减特权</view>
+</view>
+
+<view class="vip-item">
+<image src="../../imgs/c3.png"></image>
+<view class="vip-txt">会员特价</view>
+</view>
+
+<view class="vip-item">
+<image src="../../imgs/c4.png"></image>
+<view class="vip-txt">积分购物</view>
+</view>
+
+</view>
+
+<!-- 会员价专享区 -->
+<view class="sekuai"></view>
+<view class="huiyuan"><view class="txtco">N</view><view>会员价专享区</view><view class="txtco">N</view></view>
+
+<view class="title-box">
+<view class="title-item">会员爆款</view>
+<view class="title-item">会员3折起</view>
+<view class="title-item">更多会员价</view>
+</view>
+
+<!-- 产品列表 -->
+<view class="pro-box">
+<!-- 产品个体 -->
+<block wx:for="{{viplist}}">
+<view class="pro-item">
+    <image bindtap="detailpage" data-id="{{item.id}}" class="pro-img" src="{{item.spic}}"></image>
+    <view class="pro-ad">
+        <view class="pro-txt">{{item.spage}}</view><view class="pro-txt1">满128/199赠</view>
+    </view>
+    <view class="pro-title" bindtap="detailpage" data-id="{{item.id}}">
+        <view class="title-txt">{{item.stitle}}</view>
+        <view class="title-txt2">{{item.sstitle}}...</view>
+    </view>
+    <view class="pro-pri">
+        <view class="pri-1">￥{{item.ssprice}}</view>
+        <view class="pri-vip">会员</view>
+        <view class="pri-3">￥{{item.sprice}}</view>
+        <image bindtap="gocart" data-id="{{item.id}}" class="pri-img" src="../../imgs/gou.png"></image>
+    </view>
+</view>
+</block>
+
+
+</view>

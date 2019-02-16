@@ -1,0 +1,27 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.fontv{
+  font-size: 3.8vw;
+}
+.font-1{
+  font-size: 3.2vw;
+}
+.fcolor{
+  color: #8b8b8b
+}
+
+.font-2{
+  font-size: 4vw;
+}
+.font-big{
+  font-size: 7vw;
+}

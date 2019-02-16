@@ -1,0 +1,21 @@
+<!--pages/index/search.wxml-->
+<!--index.wxml-->
+<view class="search-box">
+<view class="search">
+<image class="img" src="../../imgs/search.png"></image>
+<input value="{{con}}" class="input" confirm-type='search' auto-focus='true' focus='true' bindblur='getSearchInfo'></input>
+<image class="btn-clear" src="../../imgs/clear.png" bindtap='clearSearch'></image>
+</view>
+<view class="btn-search" bindtap="inputInfo">搜索</view>
+</view>
+
+<!-- 热门推荐相关 -->
+<view class="fontv passtxt">热门推荐</view>
+<view class="recom-box">
+  <view class="fontv item focuss">面膜</view>
+  <view class="fontv item">会员卡</view>
+  <view class="fontv item">袋鼠</view>
+  <view class="fontv item">爆款面膜</view>
+  <view class="fontv item">喷雾</view>
+  <view class="fontv item">一叶子</view>
+</view>

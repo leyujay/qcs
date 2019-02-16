@@ -1,0 +1,94 @@
+<!--index.wxml-->
+<view class="search-box">
+<view class="search" bindtap="goSearch">
+<image class="img" src="../../imgs/search.png"></image>
+<view class="fontv txt">面膜</view>
+</view>
+</view>
+
+<!-- 转播图 -->
+<swiper  autoplay='true' interval='5000' duration='1000' class="swiper">
+  <block wx:for="{{scrolist}}">
+  <swiper-item data-id="{{item.id}}" bindtap="detailpage" class="swiper-item"><image src="{{item.pic}}"></image></swiper-item>
+  </block>
+</swiper>
+
+<!-- 促销小栏 -->
+<view class="remote-box">
+  <view data-id="1" bindtap="detailpage" class="remote-item">
+    <image src="../../imgs/111.png"></image>
+    <text class="font-1">大牌精选</text>
+  </view>
+   <view class="remote-item">
+    <image src="../../imgs/222.png"></image>
+    <text class="font-1">正品保证</text>
+  </view>
+   <view class="remote-item">
+    <image src="../../imgs/333.png"></image>
+    <text class="font-1">满68元邮</text>
+  </view>
+  <view data-id="1" bindtap="detailpage" class="remote-info">
+    <text class="font-1">营业信息 ></text>
+  </view>
+</view>
+
+<!-- 产品小分类 -->
+<view class="cate-box">
+  <view data-id="1" bindtap="detailpage" class="cate-item">
+      <image src="../../imgs/aa.png"></image>
+      <view class="font-1 fcolor">闪电送</view>
+  </view>
+  <view class="cate-item">
+      <image src="../../imgs/bb.png"></image>
+      <view class="font-1 fcolor">面膜生活</view>
+  </view>
+  <view class="cate-item">
+      <image src="../../imgs/cc.png"></image>
+      <view class="font-1 fcolor">居家生活</view>
+  </view>
+  <view class="cate-item">
+      <image src="../../imgs/dd.png"></image>
+      <view class="font-1 fcolor">扫码购</view>
+  </view>
+  <view class="cate-item">
+      <image src="../../imgs/ee.png"></image>
+      <view class="font-1 fcolor">免费试用</view>
+  </view>
+</view>
+
+
+<!-- 广告大长条 -->
+<block wx:for="{{bigad}}">
+<view class="ad-box">
+<image class="ad-big" src="{{item.adpic}}"/>
+</view>
+</block>
+
+<!-- 秒杀精选 -->
+<view class="skill-title">
+  <view class="today font-2">今日秒杀</view>
+    <view wx:if="{{time!==0}}" class="timeout font-2">{{hour}}</view>
+    <text wx:if="{{time!==0}}">:</text>
+    <view wx:if="{{time!==0}}" class="timeout font-2">{{minute}}</view>
+    <text wx:if="{{time!==0}}">:</text>
+    <view wx:if="{{time!==0}}" class="timeout font-2">{{second}}</view>
+    <view wx:if="{{time==0}}" class="timeout2 font-2">{{info}}</view>
+  <view class="more-goods font-2">更多好货 ></view>
+</view>
+<scroll-view scroll-x="true" class="scroll2">
+
+<!-- 小组 -->
+<block wx:for="{{sekill}}">
+<view class="sgoods" >
+  <view class="back">
+    <image class="simg" src="{{item.spic}}"></image>
+    <view class="rub">必抢</view>
+  </view>
+  <view class="stitle font-1">{{item.stitle}}...</view>
+  <view class="real-price font-2">￥{{item.sprice}}</view>
+  <view class="fake-price font-1">￥{{item.ssprice}}</view>
+</view>
+</block>
+
+</scroll-view>
+

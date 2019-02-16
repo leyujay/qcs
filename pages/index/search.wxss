@@ -1,0 +1,61 @@
+/* pages/index/search.wxss */
+.search{
+  width: 82%;
+  background-color: whitesmoke;
+  height: 5vh;
+  border-radius: 40rpx;
+  display: flex;
+  align-items: center;
+  margin-left: 2vw;
+  float: left;
+}
+.search-box{
+  width: 100%;
+}
+.input{
+  font-size: 3.8vw;
+  width: 60vw;
+}
+.img{
+  width: 6vw;
+  height: 6vw;
+  float: left;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+.btn-clear{
+  width: 6vw;
+  height: 6vw;
+}
+.btn-search{
+  width: 15%;
+  /* background-color: blue; */
+  font-size: 3.8vw;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+}
+.passtxt{
+  padding-top: 15vw;
+  padding-left: 2vw;
+}
+.recom-box{
+  width: 100%;
+  padding: 2vw;
+}
+.item{
+  background-color: whitesmoke;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  margin: 2vw;
+  float: left;
+  border-radius: 5vw;
+}
+.focuss{
+  background-color: rgb(255, 208, 208);
+  color: white;
+}
