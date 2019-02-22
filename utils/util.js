@@ -13,7 +13,9 @@ function post(url,data,fun,that){
       "Content-Type": "application/x-www-form-urlencoded"
     },
     success:function(res){
-      // console.log(res.data.result);
+      // console.log('1111111');
+      // console.log(res);
+      // console.log('2222222');
       that[fun](res.data.result);
     },
     fail:function(res){

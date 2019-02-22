@@ -3,6 +3,7 @@ var com=require('../../utils/util.js');
 const app = getApp();
 var lick=[];
 var chk2="";
+var waschk="";
 Page({
 
   /**
@@ -23,6 +24,9 @@ Page({
    */
   onLoad: function (options) {
     com.post('cartlist', {}, 'recomd', this);
+    this.setData({
+      waschecked: waschk
+    })
   },
 
   onShow:function(e){
@@ -138,16 +142,17 @@ Page({
       res=1;
     }
     console.log(e);
-    com.post('sumprice',{'res':res},'sumpri',this);
+    com.post('sumprice',{'res':res},'sumprii',this);
     var resu = '';
     if (res == 1) {
       resu = 'true';
     }
+    waschk=resu;
     this.setData({
       'waschecked': resu
     })
   },
-  sumpri:function(e){
+  sumprii:function(e){
     this.setData({
       'sumpri':e,
     });
